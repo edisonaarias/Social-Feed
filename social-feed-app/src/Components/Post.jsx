@@ -1,10 +1,10 @@
 import React from 'react';
  
-const Post = ({Post}) => {
+const Post = ({post}) => {
     return (
         <div>
-            <h3>Name Goes Here</h3>
-            <p>Paragraph Text Mapper</p>
+            <h3>{post.name}</h3>
+            <p>{post.message}</p>
             <button>Like</button>
             <button>Dislike</button>
         </div>

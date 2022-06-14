@@ -8,23 +8,26 @@ function App() {
    //stateful variables
    const [posts, setPosts] = useState([])
       {
-        name: "Jake",
-        message: "I like pizza for dinner",
-        isLiked: false,
-        isDislked: false
+          name: "Jake",
+          message: "I like pizza for dinner",
+          isLiked: false,
+          isDislked: false,
+          id: 1
       },
       {
-        name: "Jake",
-        message: "I like pizza for dinner",
-        isLiked: false,
-        isDislked: false,
+          name: "Jake",
+          message: "I like pizza for dinner",
+          isLiked: false,
+          isDislked: false,
+          id: 2
       },
-      
+
       {
-        name: "Jake",
-        message: "I like pizza for dinner",
-        isLiked: false,
-        isDislked: false,
+          name: "Jake",
+          message: "I like pizza for dinner",
+          isLiked: false,
+          isDislked: false,
+          id: 3
       },
 
 
@@ -43,27 +46,6 @@ function App() {
 export default App;
 
 
-
-
-
-
-
-    <a hr
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 
 
 
