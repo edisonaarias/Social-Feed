@@ -5,40 +5,43 @@ import PostMapper from './Components/PostMapper';
 
 
 function App() {
-   //stateful variables
-   const [posts, setPosts] = useState([])
-      {
-          name: "Jake",
-          message: "I like pizza for dinner",
-          isLiked: false,
-          isDislked: false,
-          id: 1
-      },
-      {
-          name: "Jake",
-          message: "I like pizza for dinner",
-          isLiked: false,
-          isDislked: false,
-          id: 2
-      },
+  //stateful variables
+  const [posts, setPosts] = useState([
+    {
+      name: "Jake",
+      message: "I like pizza for dinner",
+      isLiked: false,
+      isDislked: false,
+      id: 1
+    },
+    {
+      name: "Jake",
+      message: "I like pizza for dinner",
+      isLiked: false,
+      isDislked: false,
+      id: 2
+    },
 
-      {
-          name: "Jake",
-          message: "I like pizza for dinner",
-          isLiked: false,
-          isDislked: false,
-          id: 3
-      },
+    {
+      name: "Jake",
+      message: "I like pizza for dinner",
+      isLiked: false,
+      isDislked: false,
+      id: 3
+    },
+  ])
 
 
 
-   //Return JSX
+
+
+  //Return JSX
   return (
-    
+
     <div className="pretty-boy-blue">
-      <NavBar/>
+      <NavBar />
       <CreatePost />
-      <PostMapper array={posts}/>
+      <PostMapper array={posts} />
     </div>
   );
 }
