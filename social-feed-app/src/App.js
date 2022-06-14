@@ -1,25 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import CreatePost from './Components/CreatePost';
+import NavBar from './Components/NavBar';
+import PostMapper from './Components/PostMapper';
+
 
 function App() {
+   //stateful variables
+   const [posts, setPosts] = useState([])
+      {
+        name: "Jake",
+        message: "I like pizza for dinner",
+        isLiked: false,
+        isDislked: false
+      },
+      {
+        name: "Jake",
+        message: "I like pizza for dinner",
+        isLiked: false,
+        isDislked: false,
+      },
+      
+      {
+        name: "Jake",
+        message: "I like pizza for dinner",
+        isLiked: false,
+        isDislked: false,
+      },
+
+
+
+   //Return JSX
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="pretty-boy-blue">
+      <NavBar/>
+      <CreatePost />
+      <PostMapper array={posts}/>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+    <a hr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
